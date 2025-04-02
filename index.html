@@ -5,7 +5,18 @@
 
     <meta charset="utf-8" />
     <title>My Resume!</title>
+    <style>
+        input {
+            width: 90%;
+            padding: 10px;
+        }
+        
+        textarea {
+            width: 50%;
+            height: 30PX;
+        }
     </style>
+
 </head>
 
 <body>
@@ -38,6 +49,20 @@
     </ul>
     <h1>Image</h1>
     <img src="img/pc.jpg" alt="Your address is wrong" height="200px">
+    <fieldset>
+        <legend>Contact Form</legend>
+        <form action="https://formspree.io/f/mblgzdwl" method="post">
+            <label for="Name:">Name:</label><br>
+            <input type="text" name="name"><br>
+            <label for="Email:">Email:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="Message:">Message:</label><br>
+            <textarea name="textarea" id="">Message</textarea><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </fieldset>
+
 
 
 </body>
